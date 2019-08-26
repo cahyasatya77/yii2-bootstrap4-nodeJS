@@ -1,6 +1,52 @@
 Yii Framework 2 Change Log
 ==========================
 
+2.0.25 August 13, 2019
+----------------------
+
+- Bug #15779: If directory path is passed to `FileHelper::unlink()` and directory has files it will not delete files in this directory on Windows now (alexkart)
+- Bug #17223: Fixed detaching a behavior event when it is a Closure instance (GHopperMSK, rob006)
+- Bug #17473: Fixed `SimpleConditionBuilder::build()` when column is not a string (alexkart)
+- Bug #17485: Reverted #17477 (samdark)
+- Bug #17486: Fixed error when using `batch()` without `$db` parameter with MSSQL (alexkart)
+
+
+2.0.24 July 30, 2019
+--------------------
+
+- Bug #10020: Fixed quoting of column names with dots in MSSQL (alexkart)
+- Bug #16796: Fixed addition and removal of table and column comments in MSSQL (sdlins)
+- Bug #17219: Fixed quoting of table names with spaces in MSSQL (alexkart)
+- Bug #17424: Subdomain support for `User::loginRequired` (alex-code)
+- Bug #17437: Fixed generating namespaced migrations (bizley)
+- Bug #17449: Fixed order of SQL column build syntax for MySQL migration (choken)
+- Bug #17457: Fixed `phpTypecast()` for MSSQL (alexkart)
+- Bug #17469: Fixed updating `Yii` logger instance when setting new logger via configuration (samdark)
+
+
+2.0.23 July 16, 2019
+--------------------
+
+- Bug #10023: Fixed MSSQL "There are no more rows in the active result set" exception when using `each()` and `batch()` (alexkart)
+- Bug #17395: Fixed issues with actions that contain underscores in their names (alexkart)
+- Bug #17413, #17418, #17426, #17431: Fixed MSSQL tests (alexkart)
+- Bug #17420: Fixed loading of column default values for MSSQL (alexkart)
+- Bug #17435: Fixed `i18n_init` migration for MSSQL (alexkart)
+
+
+2.0.22 July 02, 2019
+--------------------
+
+- Bug #16394: Fixed issues in `migrate/create` when specifying default values with colons and adding multiple columns (alexkart)
+- Bug #17057: Fixed issues with table names that contain special characters or keywords in MSSQL (alexkart)
+- Bug #17325: Fixed "Cannot drop view" for MySQL while `migrate/fresh` (alexkart)
+- Bug #17341: Re-added fix for error from yii.activeForm.js in strict mode (mikehaertl)
+- Bug #17384: Fixed SQL error when passing `DISTINCT ON` queries (brandonkelly)
+- Bug #17389: Fixed `UniqueValidator` to work with Active Record having `joinWith()` in its `find()` (garthpmurray)
+- Enh #17382: Added `\yii\validators\DateValidator::$strictDateFormat` to enable strict validation (alexkart)
+- Enh #17396: Added 'invoked by controller' to the debug log message when `\yii\base\Action` is used (alexkart)
+
+
 2.0.21 June 18, 2019
 --------------------
 

@@ -1,10 +1,30 @@
 Yii Framework 2 bootstrap4 extension Change Log
 ==============================================
 
+2.0.7 August 13, 2019
+---------------------
+
+- Bug #163: Fixed error messages for checkbox and radio lists (simialbi)
+- Enh #165: Allow override all classes via widget factory (simialbi)
+
+
+2.0.6 July 23, 2019
+-------------------
+
+- Enh #93: Docs: Migration from yii2-bootstrap (simialbi)
+- Enh #95: Brought back `$barOptions` (simialbi)
+
+
+2.0.5 July 02, 2019
+-------------------
+
+- Enh #150: Set custom checks and radios as default behaviour (simialbi)
+
+
 2.0.4 June 11, 2019
 -------------------
 
-- Bug #128: Fixed Input group invalid-feedback (simialbi)
+- Bug #128: Fixed inputTemplate invalid-feedback (simialbi)
 - Bug #133: Menu items were never activated (Thoulah, simialbi)
 
 
